@@ -8,6 +8,17 @@ This is a simple project showcasing the integration of Temporal and Golang withi
 - Temporal + Go + Docker = Output
 ![a](https://github.com/swarajkumarsingh/hello-temporal-go/assets/89764448/0816f304-b7a6-4fe8-9d18-1947a733b2c1)
 
+
+## Workflow of temporal
+- Start the server 
+- Define a task(queue) with name
+- Execute a workflow and push it to the queue
+- Start worker.go file(contains all the registration of workflow and activity)
+- Still now the task state is running
+- Now worker.go, starts executing all workflow in the respective queue, with the unique queue name provided
+- Now the taste state in temporal dashboard is completed 
+
+
 ## Prerequisites
 
 Make sure you have the following installed on your system:
