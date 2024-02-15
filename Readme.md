@@ -10,6 +10,9 @@ This is a simple project showcasing the integration of Temporal and Golang withi
 
 
 ## Workflow of temporal
+![diagram-export-2-16-2024-1_19_28-AM](https://github.com/swarajkumarsingh/hello-temporal-go/assets/89764448/5df55b01-879b-414a-97f7-1964f7accc3f)
+
+
 - Start the server 
 - Define a task(queue) with name
 - Execute a workflow and push it to the queue
