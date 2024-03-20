@@ -21,6 +21,16 @@ This is a simple project showcasing the integration of Temporal and Golang withi
 - Now worker.go, starts executing all workflow in the given queue like a queue conusmer
 - And updates the state in temporal dashboard as "completed" or "failed" according to the execution 
 
+## How the code executes
+- We define the code for the workflow in the project
+- Then we start the temporal, connect to temporal server with the specific queue name
+- Then execute the workflow in the starter
+- Optionally wait for the workflow to complete and give the expected result
+- Then worker.go comes, here again we connect worker to temporal
+- And register all the workflows and activities
+- At last run the worker which then executes Workflow
+- Generally worker is made to run first as, we create workflow and it gets connected in parallel
+
 
 ## Prerequisites
 
